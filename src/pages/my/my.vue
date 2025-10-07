@@ -1,35 +1,33 @@
 <template>
-    <text>我的</text>
+  <view class="my">
+    <view>会员信息：{{ memberStore.profile }}</view>
+    <button
+      @tap="
+        memberStore.setProfile({
+          nickname: '黑马先锋',
+        })
+      "
+      size="mini"
+      plain
+    >
+      保存用户信息
+    </button>
+    <button
+      @tap="memberStore.clearProfile()"
+      size="mini"
+      plain
+    >
+      清理用户信息
+    </button>
+  </view>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { useMemberStore } from '@/stores'
+
+const memberStore = useMemberStore()
 </script>
 
-<style>
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin-top: 200rpx;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50rpx;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
-}
+<style lang="scss">
+//
 </style>
