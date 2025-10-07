@@ -16,19 +16,24 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#FFFFFF",
-		"backgroundColor": "#FFFFFF"
+		"navigationBarBackgroundColor": "#27BA9B",
+		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": {
+		"selectedColor": "#27BA9B",
 		"list": [
 			{
 				"text": "首页",
-				"pagePath": "pages/index/index"
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tab_icons/home.png",
+				"selectedIconPath": "static/tab_icons/home-active.png"
 			},
 			{
 				"text": "我的",
-				"pagePath": "pages/my/my"
+				"pagePath": "pages/my/my",
+				"iconPath": "static/tab_icons/my.png",
+				"selectedIconPath": "static/tab_icons/my-active.png"
 			}
 		]
-	},
+	}
 }
