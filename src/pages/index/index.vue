@@ -1,10 +1,10 @@
 <template>
   <CustomNavbar />
+  <XtxSwiper />
 </template>
 
 <script setup lang="ts">
 import CustomNavbar from './components/CustomNavbar.vue'
 </script>
 
-<style>
-</style>
+<style></style>
