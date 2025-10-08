@@ -41,6 +41,11 @@ interface Data<T> {
     result: T
 }
 
+/**
+ * 
+ * @param options UniApp.RequestOptions
+ * @returns Data<T>
+ */
 export const http = <T>(options: UniApp.RequestOptions) => {
     // 返回promise对象
     return new Promise<Data<T>>((resolve, reject) => {
